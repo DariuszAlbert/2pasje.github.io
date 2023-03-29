@@ -1,0 +1,68 @@
+// - FONT SIZE SYSTEM (px)
+//  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+//  - DEFAULT FONT WEIGHTS:
+// Default: 400
+// Medium:500
+// Semi-bold: 600
+// Bold: 700
+
+//  - LINE HEIGHTS:
+// Default: 1
+// Small: 1.05
+// Medium: 1.2
+// Paragraph default: 1.6
+
+// - LETTER SPACING:
+// 0.4px
+// .8rem5px
+
+body {
+  font-family: "Cormorant", serif;
+  font-weight: 400;
+  line-height: 1.7;
+
+  padding: 3rem;
+}
+
+.header {
+  &__logo-text {
+    font-family: "Petit Formal Script", serif;
+    font-size: 7.4rem;
+    position: absolute;
+    top: 3rem;
+    left: 10rem;
+
+    &-2 {
+      font-size: 11rem;
+    }
+  }
+}
+
+.heading-primary {
+  color: $color-grey-dark-3;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+
+  &--main {
+    display: block;
+    font-size: 9.6rem;
+    font-weight: 700;
+    letter-spacing: 0.8rem;
+  }
+  &--sub {
+    display: block;
+    font-size: 4.4rem;
+    font-weight: 700;
+    letter-spacing: 0.4rem;
+  }
+  &--slogan {
+    display: block;
+    text-transform: lowercase;
+    font-family: "Petit Formal Script", serif;
+    font-size: 4.4rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+  }
+}

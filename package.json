@@ -1,0 +1,14 @@
+{
+  "name": "dwiepasje",
+  "version": "1.0.0",
+  "description": "webpage for 2pasje.pl",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/index.css -w"
+  },
+  "author": "Dariusz Golunski",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
