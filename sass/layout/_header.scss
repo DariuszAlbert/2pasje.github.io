@@ -1,16 +1,29 @@
 .header {
-  height: 95vh;
-  background-image: linear-gradient(
-      to right top,
-      rgba($color-primary-light, 0.8),
-      rgba($color-primary-dark, 0.8)
-    ),
-    url("../../css/img/header-photo.jpg");
-  background-size: cover;
-  background-position: top;
+  overflow: hidden;
+
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   position: relative;
+  z-index: 10;
+
+  &__img-holder {
+    height: 100vh;
+    background-image: linear-gradient(
+        to right top,
+        rgba($color-grey-light-1, 0.7),
+        rgba($color-grey-light-2, 0.7)
+      ),
+      url("../../css/img/header-photo.jpg");
+    background-size: cover;
+    background-position: top;
+    transition: all 1s;
+    //   &:hover {
+    //     transform: scale(1.05);
+    //   }
+  }
+  .scale {
+    transform: scale(1.05);
+  }
 
   &__text-box {
     text-align: center;
