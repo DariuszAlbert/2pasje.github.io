@@ -55,8 +55,8 @@ body {
   font-family: "Petit Formal Script", serif;
   font-size: 7.4rem;
   position: absolute;
-  top: 3rem;
-  left: 10rem; }
+  top: 3%;
+  left: 5%; }
   .header__logo-text-2 {
     font-size: 11rem; }
 
@@ -114,13 +114,59 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1;
+  grid-template-rows: 1fr;
   align-items: center;
   gap: 10rem; }
 
 .col-1-of-2 {
   width: 100%;
   height: 50rem; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 5.5rem;
+  align-items: center;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(34, 34, 34, 0.8)), url("../../css/img/footer-photo.jpg");
+  background-size: cover;
+  background-position: 0 35%;
+  padding: 10rem 0 5rem 0;
+  z-index: 6;
+  text-align: center; }
+  .footer__logo-text {
+    font-family: "Petit Formal Script", serif;
+    color: #222;
+    font-size: 8.6rem;
+    transform: scale(1.3); }
+    .footer__logo-text-2 {
+      font-size: 11rem; }
+  .footer__nav {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 600; }
+  .footer__nav-list {
+    display: flex;
+    gap: 16rem;
+    list-style: none; }
+  .footer__nav-link {
+    text-decoration: none;
+    color: #222; }
+    .footer__nav-link:link, .footer__nav-link:visited {
+      display: inline-block;
+      letter-spacing: 0.2rem;
+      text-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.5);
+      transition: all 0.4s; }
+    .footer__nav-link:hover {
+      transform: scale(1.05);
+      text-shadow: 0 0.5rem 5rem rgba(0, 0, 0, 0.5); }
+  .footer__copyright {
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.99);
+    display: inline-block;
+    padding-top: 1rem;
+    width: 100%;
+    text-align: center;
+    border-top: 3px solid rgba(34, 34, 34, 0.8); }
 
 .composition__img {
   width: 100%;
@@ -138,7 +184,7 @@ body {
   z-index: 10; }
   .header__img-holder {
     height: 100vh;
-    background-image: linear-gradient(to right top, rgba(248, 248, 248, 0.7), rgba(238, 238, 238, 0.7)), url("../../css/img/header-photo.jpg");
+    background-image: linear-gradient(to right top, rgba(248, 248, 248, 0.7), rgba(238, 238, 238, 0.7)), url("../../css/img/header-photo-2.jpg");
     background-size: cover;
     background-position: top;
     transition: all 1s; }
@@ -159,17 +205,28 @@ body {
   padding: 20rem 0;
   transform: skewY(-3deg);
   position: relative;
-  z-index: 9; }
+  z-index: 9;
+  border-top: 1px solid rgba(0, 0, 0, 0.9); }
   .section-me > * {
     transform: skewY(3deg); }
 
 .section-work {
-  background-image: linear-gradient(to right top, rgba(248, 248, 248, 0.9), rgba(238, 238, 238, 0.9)), url("../../css/img/work-photo.jpg");
+  background-image: linear-gradient(to right top, rgba(248, 248, 248, 0.8), rgba(238, 238, 238, 0.8)), url("../../css/img/work-photo.jpg");
   background-size: cover;
   margin-top: -15rem;
-  padding: 30rem 0 20rem;
+  padding: 30rem 0 15rem;
   transform: skewY(-3deg);
   position: relative;
   z-index: 8; }
   .section-work > * {
     transform: skewY(3deg); }
+
+.section-sailing {
+  background-image: linear-gradient(to right top, rgba(248, 248, 248, 0.7), rgba(238, 238, 238, 0.7)), url("../../css/img/section-sailing.jpg");
+  background-size: cover;
+  background-position: 0 50%;
+  margin-top: -15rem;
+  padding: 30rem 0 30rem;
+  transform-origin: left top;
+  position: relative;
+  z-index: 7; }
