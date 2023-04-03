@@ -1,36 +1,22 @@
 .header {
-  overflow: hidden;
-
+  position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-  position: relative;
+  overflow: hidden;
   z-index: 10;
-
   &__img-holder {
+    @include sectionBgImage("../css/img/header-photo-large.jpg", 0.7);
     height: 100vh;
-    background-image: linear-gradient(
-        to right top,
-        rgba($color-grey-light-1, 0.7),
-        rgba($color-grey-light-2, 0.7)
-      ),
-      url("../../css/img/header-photo-2.jpg");
-    background-size: cover;
-    background-position: top;
     transition: all 1s;
-    //   &:hover {
-    //     transform: scale(1.05);
-    //   }
-  }
-  .scale {
-    transform: scale(1.05);
   }
 
   &__text-box {
+    @include centerAbsolute();
     text-align: center;
     width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
+}
+
+.scale {
+  transform: scale(1.05);
 }

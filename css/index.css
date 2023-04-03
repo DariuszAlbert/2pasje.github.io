@@ -18,14 +18,6 @@
     opacity: 1;
     transform: translate(0); } }
 
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
 *,
 *::before,
 *::after {
@@ -127,12 +119,12 @@ body {
   flex-direction: column;
   gap: 5.5rem;
   align-items: center;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(34, 34, 34, 0.8)), url("../../css/img/footer-photo.jpg");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(34, 34, 34, 0.8)), url("../../css/img/footer-photo-large.jpg");
   background-size: cover;
   background-position: 0 35%;
   padding: 10rem 0 5rem 0;
-  z-index: 6;
-  text-align: center; }
+  text-align: center;
+  z-index: 6; }
   .footer__logo-text {
     font-family: "Petit Formal Script", serif;
     color: #222;
@@ -160,13 +152,13 @@ body {
       transform: scale(1.05);
       text-shadow: 0 0.5rem 5rem rgba(0, 0, 0, 0.5); }
   .footer__copyright {
-    font-size: 3rem;
-    color: rgba(0, 0, 0, 0.99);
     display: inline-block;
+    font-size: 3rem;
+    border-top: 3px solid rgba(34, 34, 34, 0.8);
+    color: rgba(0, 0, 0, 0.99);
     padding-top: 1rem;
     width: 100%;
-    text-align: center;
-    border-top: 3px solid rgba(34, 34, 34, 0.8); }
+    text-align: center; }
 
 .composition__img {
   width: 100%;
@@ -177,56 +169,56 @@ body {
     box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.4); }
 
 .header {
-  overflow: hidden;
+  position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-  position: relative;
+  overflow: hidden;
   z-index: 10; }
   .header__img-holder {
-    height: 100vh;
-    background-image: linear-gradient(to right top, rgba(248, 248, 248, 0.7), rgba(238, 238, 238, 0.7)), url("../../css/img/header-photo-2.jpg");
+    background-image: linear-gradient(to right top, rgba(248, 248, 248, 0.7), rgba(238, 238, 238, 0.7)), url("../css/img/header-photo-large.jpg");
     background-size: cover;
-    background-position: top;
+    height: 100vh;
     transition: all 1s; }
-  .header .scale {
-    transform: scale(1.05); }
   .header__text-box {
-    text-align: center;
-    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%; }
+
+.scale {
+  transform: scale(1.05); }
 
 .section-me {
-  background-image: linear-gradient(to right top, rgba(248, 248, 248, 0.8), rgba(238, 238, 238, 0.8)), url("../../css/img/me-photo.jpg");
+  background-image: linear-gradient(to right top, rgba(248, 248, 248, 0.8), rgba(238, 238, 238, 0.8)), url("../../css/img/section-me-large.jpg");
   background-size: cover;
+  position: relative;
+  border-top: 1px solid rgba(0, 0, 0, 0.9);
   margin-top: -15rem;
   padding: 20rem 0;
   transform: skewY(-3deg);
-  position: relative;
-  z-index: 9;
-  border-top: 1px solid rgba(0, 0, 0, 0.9); }
+  z-index: 9; }
   .section-me > * {
     transform: skewY(3deg); }
 
 .section-work {
-  background-image: linear-gradient(to right top, rgba(248, 248, 248, 0.8), rgba(238, 238, 238, 0.8)), url("../../css/img/work-photo.jpg");
+  background-image: linear-gradient(to right top, rgba(248, 248, 248, 0.8), rgba(238, 238, 238, 0.8)), url("../../css/img/section-work-large.jpg");
   background-size: cover;
+  position: relative;
   margin-top: -15rem;
   padding: 30rem 0 15rem;
   transform: skewY(-3deg);
-  position: relative;
   z-index: 8; }
   .section-work > * {
     transform: skewY(3deg); }
 
 .section-sailing {
-  background-image: linear-gradient(to right top, rgba(248, 248, 248, 0.7), rgba(238, 238, 238, 0.7)), url("../../css/img/section-sailing.jpg");
+  background-image: linear-gradient(to right top, rgba(248, 248, 248, 0.8), rgba(238, 238, 238, 0.8)), url("../../css/img/section-sailing-large.jpg");
   background-size: cover;
+  position: relative;
   background-position: 0 50%;
   margin-top: -15rem;
   padding: 30rem 0 30rem;
   transform-origin: left top;
-  position: relative;
   z-index: 7; }
