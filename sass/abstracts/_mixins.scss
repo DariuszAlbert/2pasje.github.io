@@ -1,3 +1,11 @@
+@mixin navClearfix {
+  &::after {
+    content: "";
+    display: block;
+    height: 7rem;
+  }
+}
+
 @mixin centerAbsolute {
   position: absolute;
   top: 50%;
