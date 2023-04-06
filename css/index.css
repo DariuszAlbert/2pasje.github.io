@@ -31,8 +31,14 @@ html {
 body {
   padding: 3rem; }
 
+.u-left-text {
+  text-align: left; }
+
 .u-center-text {
   text-align: center; }
+
+.u-right-text {
+  text-align: right; }
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
@@ -80,7 +86,7 @@ body {
     letter-spacing: 1rem; }
 
 .heading-secondary {
-  font-size: 4.4rem;
+  font-size: 5.2rem;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
@@ -97,8 +103,9 @@ body {
   text-transform: uppercase; }
 
 .paragraph {
-  font-size: 2.4rem;
+  font-size: 3rem;
   font-weight: 600;
+  line-height: 1.4;
   text-shadow: 0 0.1rem 10rem rgba(0, 0, 0, 0.9); }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
@@ -106,15 +113,15 @@ body {
 .row {
   max-width: 120rem;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
+  position: relative;
+  display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10rem; }
 
 .col-1-of-2 {
   width: 100%;
-  height: 50rem; }
+  align-self: flex-end; }
 
 .navigation {
   width: 92%;
@@ -269,12 +276,14 @@ body {
     text-align: center; }
 
 .composition__img {
-  width: 100%;
+  width: 85%;
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
   transition: all 0.8s; }
   .composition__img:hover {
     transform: scale(1.1);
     box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.4); }
+  .composition__img--3 {
+    width: 120%; }
 
 .header {
   position: relative;
@@ -309,17 +318,31 @@ body {
   z-index: 9; }
   .section-me > * {
     transform: skewY(3deg); }
+  .section-me__heading {
+    position: absolute;
+    top: 9rem;
+    left: 0;
+    z-index: 12; }
+  .section-me__paragraph {
+    margin-bottom: 4rem; }
 
 .section-work {
   background-image: linear-gradient(to right top, rgba(248, 248, 248, 0.8), rgba(238, 238, 238, 0.8)), url("../../css/img/section-work-large.jpg");
   background-size: cover;
   position: relative;
   margin-top: -15rem;
-  padding: 30rem 0 15rem;
+  padding: 35rem 0 15rem;
   transform: skewY(-3deg);
   z-index: 8; }
   .section-work > * {
     transform: skewY(3deg); }
+  .section-work__heading {
+    position: absolute;
+    top: 4rem;
+    right: -8rem;
+    z-index: 12; }
+  .section-work__paragraph {
+    margin-bottom: 4rem; }
 
 .section-sailing {
   background-image: linear-gradient(to right top, rgba(248, 248, 248, 0.8), rgba(238, 238, 238, 0.8)), url("../../css/img/section-sailing-large.jpg");
@@ -330,3 +353,9 @@ body {
   padding: 30rem 0 30rem;
   transform-origin: left top;
   z-index: 7; }
+  .section-sailing__heading {
+    margin-left: calc(120rem / 4);
+    position: absolute;
+    top: 18rem;
+    left: 0;
+    z-index: 12; }
