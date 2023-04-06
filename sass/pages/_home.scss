@@ -1,5 +1,5 @@
 .section-me {
-  @include sectionBgImage("../../css/img/section-me-large.jpg", 0.8);
+  @include sectionBgImage("../css/img/section-me-large.jpg", 0.8);
   position: relative;
   border-top: 1px solid rgba($color-black, 0.9);
   margin-top: -15rem;
@@ -25,7 +25,7 @@
 }
 
 .section-work {
-  @include sectionBgImage("../../css/img/section-work-large.jpg", 0.8);
+  @include sectionBgImage("../css/img/section-work-large.jpg", 0.8);
   position: relative;
   margin-top: -15rem;
   padding: 35rem 0 15rem;
@@ -47,7 +47,7 @@
   }
 }
 .section-sailing {
-  @include sectionBgImage("../../css/img/section-sailing-large.jpg", 0.8);
+  @include sectionBgImage("../css/img/section-sailing-large.jpg", 0.8);
   position: relative;
   background-position: 0 50%;
   margin-top: -15rem;

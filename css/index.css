@@ -308,7 +308,7 @@ body {
   transform: scale(1.05); }
 
 .section-me {
-  background-image: linear-gradient(to right top, rgba(248, 248, 248, 0.8), rgba(238, 238, 238, 0.8)), url("../../css/img/section-me-large.jpg");
+  background-image: linear-gradient(to right top, rgba(248, 248, 248, 0.8), rgba(238, 238, 238, 0.8)), url("../css/img/section-me-large.jpg");
   background-size: cover;
   position: relative;
   border-top: 1px solid rgba(0, 0, 0, 0.9);
@@ -327,7 +327,7 @@ body {
     margin-bottom: 4rem; }
 
 .section-work {
-  background-image: linear-gradient(to right top, rgba(248, 248, 248, 0.8), rgba(238, 238, 238, 0.8)), url("../../css/img/section-work-large.jpg");
+  background-image: linear-gradient(to right top, rgba(248, 248, 248, 0.8), rgba(238, 238, 238, 0.8)), url("../css/img/section-work-large.jpg");
   background-size: cover;
   position: relative;
   margin-top: -15rem;
@@ -345,7 +345,7 @@ body {
     margin-bottom: 4rem; }
 
 .section-sailing {
-  background-image: linear-gradient(to right top, rgba(248, 248, 248, 0.8), rgba(238, 238, 238, 0.8)), url("../../css/img/section-sailing-large.jpg");
+  background-image: linear-gradient(to right top, rgba(248, 248, 248, 0.8), rgba(238, 238, 238, 0.8)), url("../css/img/section-sailing-large.jpg");
   background-size: cover;
   position: relative;
   background-position: 0 50%;
