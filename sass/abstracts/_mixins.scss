@@ -1,8 +1,8 @@
-@mixin navClearfix {
+@mixin clearfix {
   &::after {
     content: "";
     display: block;
-    height: 7rem;
+    // clear: both;
   }
 }
 

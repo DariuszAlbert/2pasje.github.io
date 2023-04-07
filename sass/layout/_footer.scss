@@ -31,13 +31,13 @@
     text-transform: uppercase;
     font-weight: 600;
   }
-  &__nav-list {
+  &__list {
     display: flex;
     gap: 16rem;
     list-style: none;
   }
 
-  &__nav-link {
+  &__link {
     text-decoration: none;
     color: $color-grey-dark-3;
 
