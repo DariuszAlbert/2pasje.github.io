@@ -26,24 +26,35 @@
     }
   }
 
-  &__nav {
+  &__nav-container {
+    display: flex;
+    gap: 20rem;
+  }
+  &-heading {
     font-size: 3rem;
     text-transform: uppercase;
     font-weight: 600;
+    margin-bottom: 2rem;
   }
-  &__list {
+  &__nav {
     display: flex;
-    gap: 16rem;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 0.5rem;
     list-style: none;
   }
 
   &__link {
     text-decoration: none;
+
     color: $color-grey-dark-3;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
 
     &:link,
     &:visited {
-      display: inline-block;
       letter-spacing: 0.2rem;
       text-shadow: 0 1rem 5rem rgba($color-black, 0.5);
       transition: all 0.4s;
@@ -53,6 +64,18 @@
       text-shadow: 0 0.5rem 5rem rgba($color-black, 0.5);
     }
   }
+  &__nav-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    list-style: none;
+  }
+  &__social-icon {
+    font-size: 3rem;
+    padding-top: 1.6rem;
+    opacity: 0.7;
+  }
+
   &__copyright {
     display: inline-block;
     font-size: 3rem;
@@ -62,4 +85,15 @@
     width: 100%;
     text-align: center;
   }
+}
+
+.instagram {
+  color: #9e3fa5;
+}
+
+.facebook {
+  color: #0a82ed;
+}
+.youtube {
+  color: #ff0000;
 }

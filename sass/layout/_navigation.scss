@@ -61,11 +61,11 @@
 
     &--1 {
       top: 2rem;
-      right: 94rem;
+      right: 50vw;
     }
     &--2 {
       top: 2rem;
-      right: 50rem;
+      right: 25vw;
     }
     &--3 {
       top: 2rem;
@@ -136,7 +136,7 @@
   }
 
   &__checkbox:checked ~ &__nav {
-    background-position: -174em;
+    background-position: -85vw;
     opacity: 0.7;
     color: $color-primary-dark;
     transform: translateX(1rem) scale(1.05);
