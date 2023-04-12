@@ -2,7 +2,7 @@
   @include sectionBgImage("../css/img/section-me-large.jpg", 0.8);
   position: relative;
   border-top: 1px solid rgba($color-black, 0.9);
-  margin-top: -15rem;
+  margin-top: -20rem;
   padding: 20rem 0;
   transform: skewY(-3deg);
   z-index: 9;
@@ -39,8 +39,11 @@
     // margin-right: calc(-100% / 8);
     position: absolute;
     top: 4rem;
-    right: -8rem;
+    right: -10rem;
     z-index: 12;
+    @include responsive(md) {
+      right: 0;
+    }
   }
   &__paragraph {
     margin-bottom: 4rem;
@@ -60,5 +63,10 @@
     top: 18rem;
     left: 0;
     z-index: 12;
+  }
+  & > .row {
+    @include responsive(md) {
+      flex-direction: column;
+    }
   }
 }

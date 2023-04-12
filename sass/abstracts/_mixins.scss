@@ -2,7 +2,7 @@
   &::after {
     content: "";
     display: block;
-    // clear: both;
+    clear: both;
   }
 }
 
@@ -21,4 +21,61 @@
     ),
     url($imgUrl);
   background-size: cover;
+}
+
+//Media query manager
+/*
+480px        sp
+480- 620px   xs
+620-768px    ss
+768-1060px   sm
+1060-1200px  md
+1200-1700px  lg
+1700+        xl
+*/
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == xs {
+    @media (max-width: 30em) {
+      //480px
+      @content;
+    }
+  }
+  @if $breakpoint == ss {
+    @media (max-width: 38.75em) {
+      //620px
+      @content;
+    }
+  }
+  @if $breakpoint == sm {
+    @media (max-width: 48em) {
+      //768px
+      @content;
+    }
+  }
+  @if $breakpoint == md {
+    @media (max-width: 66.25em) {
+      //1060px
+      @content;
+    }
+  }
+  @if $breakpoint == lg {
+    @media (max-width: 75em) {
+      //1200px
+      @content;
+    }
+  }
+  @if $breakpoint == xl {
+    @media (max-width: 106.25em) {
+      //1700px
+      @content;
+    }
+  }
+
+  // @if $breakpoint == xxl {
+  //   @media (min-width: 112.5em) {
+  //     //1800px +
+  //     @content;
+  //   }
+  // }
 }

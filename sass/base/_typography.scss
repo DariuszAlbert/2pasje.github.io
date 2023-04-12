@@ -29,7 +29,7 @@ body {
     font-size: 7.4rem;
     position: absolute;
     top: 2rem;
-    left: 10rem;
+    left: 5rem;
 
     &-2 {
       font-size: 11rem;
@@ -80,6 +80,9 @@ body {
   &:hover {
     text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
     transform: scale(1.1);
+  }
+  @include responsive(md) {
+    font-size: 4.4rem;
   }
 }
 

@@ -1,4 +1,6 @@
 .composition {
+  display: flex;
+  justify-content: center;
   &__img {
     width: 85%;
     box-shadow: 0 1rem 4rem rgba($color-black, 0.4);
@@ -8,7 +10,11 @@
       box-shadow: 0 3rem 4rem rgba($color-black, 0.4);
     }
     &--3 {
-      width: 120%;
+      width: 140%;
+      @include responsive(md) {
+        width: 80%;
+        align-self: center;
+      }
     }
   }
 }

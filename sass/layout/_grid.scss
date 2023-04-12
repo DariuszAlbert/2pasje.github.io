@@ -9,6 +9,9 @@
   align-items: center;
   justify-content: center;
   gap: 10rem;
+  @include responsive(md) {
+    gap: 5rem;
+  }
 }
 
 .col-1-of-2 {
