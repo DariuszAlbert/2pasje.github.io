@@ -42,7 +42,6 @@ const navCheckbox = document.querySelector(".navigation__button");
 
 function removeClass(itemsList) {
   for (let item of itemsList) {
-    // console.log(item);
     item.classList.remove("item-visible");
   }
 }

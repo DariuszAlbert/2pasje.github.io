@@ -4,8 +4,36 @@
   border-top: 1px solid rgba($color-black, 0.9);
   margin-top: -20rem;
   padding: 20rem 0;
+
   transform: skewY(-3deg);
   z-index: 9;
+  @include responsive(sm) {
+    text-align: center;
+    padding: 22rem 0 10rem 0;
+  }
+  @include responsive(xs) {
+    text-align: center;
+    padding: 22rem 0 5rem 0;
+  }
+
+  & > .row {
+    @include responsive(sm) {
+      // display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+    }
+  }
+  & > .row > .col-1-of-2 {
+    @include responsive(sm) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5rem;
+    }
+  }
 
   & > * {
     transform: skewY(3deg);
@@ -18,9 +46,17 @@
     top: 9rem;
     left: 0;
     z-index: 12;
+    @include responsive(sm) {
+      position: relative;
+      top: 2rem;
+    }
   }
   &__paragraph {
     margin-bottom: 4rem;
+    @include responsive(sm) {
+      text-align: left;
+      padding: 0 3rem;
+    }
   }
 }
 
@@ -31,12 +67,38 @@
   padding: 35rem 0 15rem;
   transform: skewY(-3deg);
   z-index: 8;
+  @include responsive(sm) {
+    text-align: center;
+    padding: 22rem 0 10rem 0;
+  }
+  @include responsive(xs) {
+    text-align: center;
+    padding: 22rem 0 5rem 0;
+  }
+
+  & > .row {
+    @include responsive(sm) {
+      // display: flex;
+      flex-direction: column-reverse;
+
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  & > .row > .col-1-of-2 {
+    @include responsive(sm) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5rem;
+    }
+  }
   & > * {
     transform: skewY(3deg);
   }
   &__heading {
-    // margin-left: auto;
-    // margin-right: calc(-100% / 8);
+    text-align: right;
     position: absolute;
     top: 4rem;
     right: -10rem;
@@ -44,9 +106,19 @@
     @include responsive(md) {
       right: 0;
     }
+    @include responsive(sm) {
+      line-height: 1.1;
+      text-align: center;
+      position: relative;
+      top: 2rem;
+    }
   }
   &__paragraph {
     margin-bottom: 4rem;
+    @include responsive(sm) {
+      text-align: left;
+      padding: 0 3rem;
+    }
   }
 }
 .section-sailing {
@@ -57,6 +129,17 @@
   padding: 30rem 0 30rem;
   transform-origin: left top;
   z-index: 7;
+  @include responsive(md) {
+    padding-bottom: 15rem;
+  }
+  @include responsive(sm) {
+    text-align: center;
+    padding: 24rem 0 10rem 0;
+  }
+  @include responsive(xs) {
+    text-align: center;
+    padding: 22rem 0 5rem 0;
+  }
   &__heading {
     margin-left: calc(#{$grid-width} / 4);
     position: absolute;
@@ -67,6 +150,13 @@
   & > .row {
     @include responsive(md) {
       flex-direction: column;
+    }
+  }
+  &__paragraph {
+    text-align: left;
+    @include responsive(sm) {
+      text-align: left;
+      padding: 0 3rem;
     }
   }
 }

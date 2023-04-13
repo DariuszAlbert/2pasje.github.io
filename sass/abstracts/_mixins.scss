@@ -48,8 +48,8 @@
     }
   }
   @if $breakpoint == sm {
-    @media (max-width: 48em) {
-      //768px
+    @media (max-width: 51.25em) {
+      //820px
       @content;
     }
   }
@@ -72,10 +72,10 @@
     }
   }
 
-  // @if $breakpoint == xxl {
-  //   @media (min-width: 112.5em) {
-  //     //1800px +
-  //     @content;
-  //   }
-  // }
+  @if $breakpoint == nav {
+    @media (min-width: 66.25em) {
+      //1800px +
+      @content;
+    }
+  }
 }

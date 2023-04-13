@@ -30,9 +30,21 @@ body {
     position: absolute;
     top: 2rem;
     left: 5rem;
+    @include responsive(sm) {
+      font-size: 5.2rem;
+    }
+    @include responsive(ss) {
+      font-size: 3.6rem;
+    }
 
     &-2 {
       font-size: 11rem;
+      @include responsive(sm) {
+        font-size: 8.6rem;
+      }
+      @include responsive(ss) {
+        font-size: 5.2rem;
+      }
     }
   }
 }
@@ -49,6 +61,17 @@ body {
     font-weight: 700;
     letter-spacing: 0.8rem;
     animation: moveInRight 2s ease;
+    @include responsive(sm) {
+      font-size: 7.4rem;
+    }
+    @include responsive(ss) {
+      font-size: 5.2rem;
+    }
+    @include responsive(xs) {
+      font-size: 4.4rem;
+      line-height: 1.2;
+      margin-bottom: 2rem;
+    }
   }
   &--sub {
     display: block;
@@ -56,6 +79,12 @@ body {
     font-weight: 700;
     letter-spacing: 0.4rem;
     animation: moveInLeft 2s ease;
+    @include responsive(sm) {
+      font-size: 3rem;
+    }
+    @include responsive(xs) {
+      font-size: 2.4rem;
+    }
   }
   &--slogan {
     display: block;
@@ -64,6 +93,12 @@ body {
     font-size: 4.4rem;
     font-weight: 700;
     letter-spacing: 1rem;
+    @include responsive(sm) {
+      font-size: 3rem;
+    }
+    @include responsive(ss) {
+      font-size: 3rem;
+    }
   }
 }
 
@@ -74,7 +109,7 @@ body {
   display: inline-block;
   letter-spacing: 0.2rem;
   backface-visibility: hidden;
-
+  line-height: 1.1;
   transition: all 0.4s;
 
   &:hover {
