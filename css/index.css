@@ -123,7 +123,8 @@ body {
         font-size: 3rem; } }
     @media (max-width: 30em) {
       .heading-primary--sub {
-        font-size: 2.4rem; } }
+        font-size: 2.4rem;
+        line-height: 1.2; } }
   .heading-primary--slogan {
     display: block;
     text-transform: lowercase;
@@ -398,12 +399,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .navigation__mobile__item::after {
+    .navigation__mobile__item:not(:last-child)::after {
       content: "";
       display: inline-block;
-      width: 30%;
+      margin-top: 0.8rem;
+      width: 40%;
       height: auto;
-      border-bottom: 3px solid rgba(255, 255, 255, 0.1); }
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
   .navigation__mobile__link:link, .navigation__mobile__link:visited {
     display: inline-block;
     font-size: 3rem;
@@ -418,6 +420,7 @@ body {
     @media (max-width: 38.75em) {
       .navigation__mobile__link:link, .navigation__mobile__link:visited {
         font-size: 2.5rem;
+        line-height: 1.2;
         padding: 0; } }
     .navigation__mobile__link:link span, .navigation__mobile__link:visited span {
       display: inline-block;

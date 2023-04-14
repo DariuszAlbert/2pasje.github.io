@@ -294,12 +294,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    &::after {
-      content: "";
-      display: inline-block;
-      width: 30%;
-      height: auto;
-      border-bottom: 3px solid rgba(255, 255, 255, 0.1);
+    &:not(:last-child) {
+      &::after {
+        content: "";
+        display: inline-block;
+        margin-top: 0.8rem;
+        width: 40%;
+        height: auto;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
     }
 
     // &:not(:last-child) {
@@ -327,6 +330,7 @@
 
       @include responsive(ss) {
         font-size: 2.5rem;
+        line-height: 1.2;
         padding: 0;
       }
 

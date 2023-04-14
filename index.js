@@ -1,11 +1,28 @@
 // BODY CLICK
 const bodyClick = document.querySelector("body");
+const checkbox = document.getElementById("navi-toggle");
+const navButton = document.querySelector(".navigation__button");
+
+navButton.addEventListener("click", function () {
+  if (!checkbox.checked) {
+    checkbox.checked = true;
+  } else {
+    checkbox.checked = false;
+  }
+});
+
 bodyClick.addEventListener("click", function (e) {
   if (e.target.className !== "navigation__link") {
-    console.log(e);
+    console.log(e.target.className);
     removeClass(items1);
     removeClass(items2);
     removeClass(items3);
+  }
+  if (
+    e.target.className !== "navigation__button" &&
+    e.target.className !== "navigation__link"
+  ) {
+    checkbox.checked = false;
   }
 });
 
