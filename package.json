@@ -4,7 +4,8 @@
   "description": "webpage for 2pasje.pl",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/index.css -w"
+    "compile:index": "node-sass sass/main.scss css/index.css -w",
+    "compile:building": "node-sass sass/building.scss css/building.css -w"
   },
   "author": "Dariusz Golunski",
   "license": "ISC",
