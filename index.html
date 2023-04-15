@@ -58,7 +58,7 @@
             <a href="/2pasje.github.io/building.html" class="navigation__link">Rekomendacje</a>
           </li>
           <li class="navigation__item navigation__item--5">
-            <a href="/2pasje.github.io/building.html" class="navigation__link">FAQ</a>
+            <a href="/building.html" class="navigation__link">FAQ</a>
           </li>
         </ul>
         <ul class="navigation__list navigation__list--3">
@@ -158,11 +158,15 @@
           </div>
           <div class="col-1-of-2">
             <div class="composition">
-              <img
-                class="composition__img composition__img--1"
-                src="css/img/me-photo-large.jpg"
-                alt=""
-              />
+              <picture>
+                <source srcset="css/img/me-photo-large.jpg" type="image/jpg" />
+                <source srcset="css/img/me-photo-large.webp" type="image/webp" />
+                <img
+                  class="composition__img composition__img--1"
+                  src="css/img/me-photo-large.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
           </div>
         </div>
@@ -171,11 +175,16 @@
         <div class="row">
           <div class="col-1-of-2">
             <div class="composition">
-              <img
-                class="composition__img composition__img--1"
-                src="css/img/work-photo-large.jpg"
-                alt=""
-              />
+              <picture>
+                <source srcset="css/img/work-photo-large.jpg" type="image/jpg" />
+                <source srcset="css/img/work-photo-large.webp" type="image/webp" />
+                
+                <img
+                  class="composition__img composition__img--1"
+                  src="css/img/work-photo-large.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
           </div>
           <div class="me__text-box col-1-of-2">
@@ -209,17 +218,25 @@
             kwintesencją wolności i piękna. Jeśli chcesz posłuchać moich
             morskich opowieści, z radością się nimi podzielę.
           </p>
+          <!-- <picture>
+            <source srcset="css/img/sailing-photo-large.jpg" type="image/jpg" />
+            <source srcset="css/img/sailing-photo-large.webp" type="image/webp" />
+            
+            <img
+              class="composition__img composition__img--3"
+              src="css/img/sailing-photo-large.jpg"
+              alt=""
+            />
+           
+           
+          </picture> -->
           <img
-            class="composition__img composition__img--3"
-            src="css/img/sailing-photo-large.jpg"
-            alt=""
-          />
-          <!-- <div class="composition">
-          </div> -->
-          <!-- <div class="col-1-of-2">
-          </div>
-          <div class="col-1-of-2">
-          </div> -->
+          class="composition__img composition__img--3"
+          src="css/img/sailing-photo-large.jpg"
+          alt=""
+        />
+       
+        
         </div>
       </section>
       

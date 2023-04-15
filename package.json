@@ -4,12 +4,24 @@
   "description": "webpage for 2pasje.pl",
   "main": "index.js",
   "scripts": {
-    "compile:index": "node-sass sass/main.scss css/index.css -w",
-    "compile:building": "node-sass sass/building.scss css/building.css -w"
+    "watch:index": "node-sass sass/main.scss css/index.css -w",
+    "watch:building": "node-sass sass/building.scss css/building.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:index watch:building",
+    "compile:index": "node-sass sass/building.scss css/index.comp.css ",
+    "compile:building": "node-sass sass/building.scss css/building.comp.css ",
+    "prefix:index": "postcss --use autoprefixer -b 'last 10 versions' css/index.comp.css -o css/index.prefix.css",
+    "prefix:building": "postcss --use autoprefixer -b 'last 10 versions' css/building.comp.css -o css/building.prefix.css",
+    "compress:index": "node-sass css/index.prefix.css css/index.css --output-style compressed",
+    "compress:building": "node-sass css/building.prefix.css css/building.css --output-style compressed",
+    "build:css": "npm-run-all compile:index compile:building prefix:index prefix:building compress:index compress:building"
   },
   "author": "Dariusz Golunski",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^8.0.0"
+    "autoprefixer": "^10.4.14",
+    "node-sass": "^8.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^10.1.0"
   }
 }

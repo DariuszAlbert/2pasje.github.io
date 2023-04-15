@@ -1,2 +1,4 @@
 node_modules/
 *.txt
+*.comp.css
+*.prefix.css
