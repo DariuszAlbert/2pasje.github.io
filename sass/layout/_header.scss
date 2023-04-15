@@ -4,10 +4,15 @@
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   overflow: hidden;
   z-index: 10;
+
   &__img-holder {
-    @include sectionBgImage("../css/img/header-photo-large.jpg", 0.7);
+    @include sectionBgImage("../css/img/header-photo-small.jpg", 0.7);
     height: 100vh;
     transition: all 1s;
+    @media (min-resolution: 192dpi) and (min-width: 37.5em),
+      (min-width: 125em) {
+      @include sectionBgImage("../css/img/header-photo-large.jpg", 0.7);
+    }
   }
 
   &__text-box {

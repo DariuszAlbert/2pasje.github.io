@@ -8,7 +8,16 @@
       rgba($color-white, 0.7),
       rgba($color-grey-dark-3, 0.8)
     ),
-    url("../css/img/footer-photo-large.jpg");
+    url("../css/img/footer-photo-small.jpg");
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba($color-white, 0.7),
+        rgba($color-grey-dark-3, 0.8)
+      ),
+      url("../css/img/footer-photo-large.jpg");
+  }
   background-size: cover;
   background-position: 0 35%;
   // margin-top: -15rem;
