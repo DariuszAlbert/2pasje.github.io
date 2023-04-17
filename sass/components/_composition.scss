@@ -1,26 +1,29 @@
 .composition__img {
-  // display: flex;
+  display: flex;
   // justify-content: center;
   // align-items: center;
 
   width: 85%;
   box-shadow: 0 1rem 4rem rgba($color-black, 0.4);
   transition: all 0.8s;
+  @include responsive(md) {
+    margin: 0 auto;
+  }
   &:hover {
     transform: scale(1.1);
     box-shadow: 0 3rem 4rem rgba($color-black, 0.4);
   }
+
   &--3 {
-    width: 50%;
+    width: 80%;
+    margin: 0 auto;
     @include responsive(md) {
-      width: 80%;
-      // align-self: center;
+      width: 85%;
     }
   }
   &--1 {
     @include responsive(sm) {
       width: 60%;
-      // align-self: center;
     }
   }
 }

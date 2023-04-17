@@ -132,6 +132,9 @@
 .section-sailing {
   @include sectionBgImage("../css/img/section-sailing-small.jpg", 0.8);
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-position: 0 50%;
   margin-top: -15rem;
   padding: 30rem 0 30rem;
@@ -152,21 +155,37 @@
     text-align: center;
     padding: 22rem 0 5rem 0;
   }
-  &__heading {
-    margin-left: calc(#{$grid-width} / 4);
-    position: absolute;
-    top: 18rem;
-    left: 0;
-    z-index: 12;
-  }
-  & > .row {
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
     @include responsive(md) {
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5rem;
+    }
+  }
+  &__column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+
+    margin: 0 auto;
+    @include responsive(md) {
+      width: 100%;
     }
   }
   &__paragraph {
     text-align: left;
-    @include responsive(sm) {
+    width: 100%;
+    padding: 0 3rem 0 8rem;
+    // margin: 0 auto;
+    @include responsive(md) {
       text-align: left;
       padding: 0 3rem;
     }
