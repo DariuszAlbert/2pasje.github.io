@@ -1,3 +1,13 @@
+// Screen offset position
+
+// let xPosition = window.pageXOffset;
+// let yPosition = window.pageYOffset;
+
+// xPosition = 0;
+// yPosition = -10;
+
+// console.log(xPosition, yPosition);
+
 // BODY CLICK
 const bodyClick = document.querySelector("body");
 const checkbox = document.getElementById("navi-toggle");
@@ -91,4 +101,20 @@ navCheckbox.addEventListener("click", function () {
   removeClass(items1);
   removeClass(items2);
   removeClass(items3);
+});
+
+// Cookie message
+const header = document.querySelector(".header");
+const message = document.createElement("div");
+message.innerHTML =
+  "Używamy plików cookies w celu poprawy funkcjonalności i analityki. <button class='btn btn--close-cookie'>OK</button>";
+
+message.classList.add("cookie-message");
+
+header.prepend(message);
+// message.classList.add("visible");
+const btnCloseCookie = document.querySelector(".btn--close-cookie");
+console.log(btnCloseCookie);
+btnCloseCookie.addEventListener("click", function () {
+  message.remove();
 });

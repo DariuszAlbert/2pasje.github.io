@@ -296,7 +296,8 @@ body {
     box-shadow: none; }
   .navigation__icon {
     position: relative;
-    margin-top: 3.25rem; }
+    margin-top: 3.25rem;
+    display: none; }
     .navigation__icon, .navigation__icon::before, .navigation__icon::after {
       width: 3rem;
       height: 2px;
@@ -644,10 +645,19 @@ body {
   .btn--white::after {
     background-color: #fff; }
 
-.btn--green {
+.btn--blue {
   background-color: #4d93ca;
   color: #fff; }
-  .btn--green::after {
+  .btn--blue::after {
+    background-color: #4d93ca; }
+
+.btn--close-cookie {
+  background-color: rgba(54, 103, 141, 0.1);
+  color: #000;
+  font-weight: 700;
+  margin: 1rem 0;
+  border: none; }
+  .btn--close-cookie::after {
     background-color: #4d93ca; }
 
 .btn::after {
@@ -710,6 +720,27 @@ body {
 
 .scale {
   transform: scale(1.05); }
+
+.cookie-message {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  bottom: 10rem;
+  left: 0;
+  z-index: 12;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2.4rem;
+  color: #222;
+  background-image: linear-gradient(to right bottom, rgba(166, 201, 229, 0.5), rgba(54, 103, 141, 0.5));
+  padding: 0 3rem;
+  animation: moveInRight 2s ease; }
+  @media (max-width: 51.25em) {
+    .cookie-message {
+      flex-direction: column;
+      padding-top: 2rem;
+      text-align: center;
+      line-height: 1; } }
 
 .section-me {
   background-image: linear-gradient(to right top, rgba(248, 248, 248, 0.8), rgba(238, 238, 238, 0.8)), url("../css/img/section-me-small.jpg");
