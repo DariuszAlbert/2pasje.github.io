@@ -5,16 +5,20 @@
   "main": "index.js",
   "scripts": {
     "watch:index": "node-sass sass/main.scss css/index.css -w",
+    "watch:life-coaching": "node-sass sass/life-coaching.scss css/life-coaching.css -w",
     "watch:building": "node-sass sass/building.scss css/building.css -w",
     "devserver": "live-server",
-    "start": "npm-run-all --parallel devserver watch:index watch:building",
-    "compile:index": "node-sass sass/building.scss css/index.comp.css ",
+    "start": "npm-run-all --parallel devserver watch:index watch:life-coaching watch:building",
+    "compile:index": "node-sass sass/main.scss css/index.comp.css ",
+    "compile:life-coaching": "node-sass sass/life-coaching.scss css/life-coaching.comp.css ",
     "compile:building": "node-sass sass/building.scss css/building.comp.css ",
     "prefix:index": "postcss --use autoprefixer -b 'last 10 versions' css/index.comp.css -o css/index.prefix.css",
+    "prefix:life-coaching": "postcss --use autoprefixer -b 'last 10 versions' css/life-coaching.comp.css -o css/life-coaching.prefix.css",
     "prefix:building": "postcss --use autoprefixer -b 'last 10 versions' css/building.comp.css -o css/building.prefix.css",
     "compress:index": "node-sass css/index.prefix.css css/index.css --output-style compressed",
+    "compress:life-coaching": "node-sass css/life-coaching.prefix.css css/life-coaching.css --output-style compressed",
     "compress:building": "node-sass css/building.prefix.css css/building.css --output-style compressed",
-    "build:css": "npm-run-all compile:index compile:building prefix:index prefix:building compress:index compress:building"
+    "build:css": "npm-run-all compile:index compile:life-coaching compile:building prefix:index prefix:life-coaching prefix:building compress:index compress:life-coaching compress:building"
   },
   "author": "Dariusz Golunski",
   "license": "ISC",

@@ -1,0 +1,10 @@
+.header__text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__paragraph {
+  width: 50%;
+  transition: all 1.5s;
+  animation: showText 4s ease;
+}

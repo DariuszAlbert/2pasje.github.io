@@ -495,15 +495,13 @@ body {
   flex-direction: column;
   gap: 5.5rem;
   align-items: center;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(34, 34, 34, 0.8)), url("../css/img/footer-photo-small.jpg");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(34, 34, 34, 0.8)), url("../css/img/footer-photo-large.jpg");
   background-size: cover;
   background-position: 0 35%;
-  padding: 10rem 0 5rem 0;
+  margin-top: -20rem;
+  padding: 30rem 0 5rem 0;
   text-align: center;
   z-index: 6; }
-  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
-    .footer {
-      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(34, 34, 34, 0.8)), url("../css/img/footer-photo-large.jpg"); } }
   .footer__logo-text {
     font-family: "Petit Formal Script", serif;
     color: #222;
@@ -771,166 +769,12 @@ body {
       top: 65vh;
       left: 0; } }
 
-.section-me {
-  background-image: linear-gradient(to right top, rgba(248, 248, 248, 0.8), rgba(238, 238, 238, 0.8)), url("../css/img/section-me-small.jpg");
-  background-size: cover;
-  position: relative;
-  border-top: 1px solid rgba(0, 0, 0, 0.9);
-  margin-top: -20rem;
-  padding: 20rem 0;
-  transform: skewY(-3deg);
-  z-index: 9; }
-  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
-    .section-me {
-      background-image: linear-gradient(to right top, rgba(248, 248, 248, 0.7), rgba(238, 238, 238, 0.7)), url("../css/img/section-me-large.jpg");
-      background-size: cover; } }
-  @media (max-width: 51.25em) {
-    .section-me {
-      text-align: center;
-      padding: 22rem 0 10rem 0; } }
-  @media (max-width: 30em) {
-    .section-me {
-      text-align: center;
-      padding: 22rem 0 5rem 0; } }
-  @media (max-width: 51.25em) {
-    .section-me > .row {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 0; } }
-  @media (max-width: 51.25em) {
-    .section-me > .row > .col-1-of-2 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 5rem; } }
-  .section-me > * {
-    transform: skewY(3deg); }
-  .section-me__heading {
-    position: absolute;
-    top: 9rem;
-    left: 0;
-    z-index: 12; }
-    @media (max-width: 51.25em) {
-      .section-me__heading {
-        position: relative;
-        top: 2rem; } }
-  .section-me__paragraph {
-    margin-bottom: 4rem; }
-    @media (max-width: 51.25em) {
-      .section-me__paragraph {
-        text-align: left;
-        padding: 0 3rem; } }
-
-.section-work {
-  background-image: linear-gradient(to right top, rgba(248, 248, 248, 0.8), rgba(238, 238, 238, 0.8)), url("../css/img/section-work-small.jpg");
-  background-size: cover;
-  position: relative;
-  margin-top: -15rem;
-  padding: 35rem 0 15rem;
-  transform: skewY(-3deg);
-  z-index: 8; }
-  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
-    .section-work {
-      background-image: linear-gradient(to right top, rgba(248, 248, 248, 0.7), rgba(238, 238, 238, 0.7)), url("../css/img/section-work-large.jpg");
-      background-size: cover; } }
-  @media (max-width: 51.25em) {
-    .section-work {
-      text-align: center;
-      padding: 22rem 0 10rem 0; } }
-  @media (max-width: 30em) {
-    .section-work {
-      text-align: center;
-      padding: 22rem 0 5rem 0; } }
-  @media (max-width: 51.25em) {
-    .section-work > .row {
-      flex-direction: column-reverse;
-      align-items: center;
-      justify-content: center; } }
-  @media (max-width: 51.25em) {
-    .section-work > .row > .col-1-of-2 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 5rem; } }
-  .section-work > * {
-    transform: skewY(3deg); }
-  .section-work__heading {
-    text-align: right;
-    position: absolute;
-    top: 4rem;
-    right: -10rem;
-    z-index: 12; }
-    @media (max-width: 66.25em) {
-      .section-work__heading {
-        right: 0; } }
-    @media (max-width: 51.25em) {
-      .section-work__heading {
-        line-height: 1.1;
-        text-align: center;
-        position: relative;
-        top: 2rem; } }
-  .section-work__paragraph {
-    margin-bottom: 4rem; }
-    @media (max-width: 51.25em) {
-      .section-work__paragraph {
-        text-align: left;
-        padding: 0 3rem; } }
-
-.section-sailing {
-  background-image: linear-gradient(to right top, rgba(248, 248, 248, 0.8), rgba(238, 238, 238, 0.8)), url("../css/img/section-sailing-small.jpg");
-  background-size: cover;
-  position: relative;
+.header__text-box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background-position: 0 50%;
-  margin-top: -15rem;
-  padding: 30rem 0 30rem;
-  transform-origin: left top;
-  z-index: 7; }
-  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
-    .section-sailing {
-      background-image: linear-gradient(to right top, rgba(248, 248, 248, 0.7), rgba(238, 238, 238, 0.7)), url("../css/img/section-sailing-large.jpg");
-      background-size: cover; } }
-  @media (max-width: 66.25em) {
-    .section-sailing {
-      padding-bottom: 15rem; } }
-  @media (max-width: 51.25em) {
-    .section-sailing {
-      text-align: center;
-      padding: 24rem 0 10rem 0; } }
-  @media (max-width: 30em) {
-    .section-sailing {
-      text-align: center;
-      padding: 22rem 0 5rem 0; } }
-  .section-sailing__row {
-    display: flex;
-    justify-content: center;
-    width: 100%; }
-    @media (max-width: 66.25em) {
-      .section-sailing__row {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 5rem; } }
-  .section-sailing__column {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 50%;
-    margin: 0 auto; }
-    @media (max-width: 66.25em) {
-      .section-sailing__column {
-        width: 100%; } }
-  .section-sailing__paragraph {
-    text-align: left;
-    width: 100%;
-    padding: 0 3rem 0 8rem; }
-    @media (max-width: 66.25em) {
-      .section-sailing__paragraph {
-        text-align: left;
-        padding: 0 3rem; } }
+  align-items: center; }
+
+.header__paragraph {
+  width: 50%;
+  transition: all 1.5s;
+  animation: showText 4s ease; }

@@ -39,10 +39,17 @@ bodyClick.addEventListener("click", function (e) {
 // HeADER BACKGROUND ANIMATION
 
 const headerImgHolder = document.querySelector(".header__img-holder");
+const headerParagraph = document.querySelector(".header__paragraph");
 
 const headerImgScale = (function () {
   setTimeout(function () {
     headerImgHolder.classList.add("scale");
+  }, 1800);
+})();
+
+const headerParagraphShow = (function () {
+  setTimeout(function () {
+    headerParagraph.classList.add("scale");
   }, 1800);
 })();
 
@@ -104,17 +111,17 @@ navCheckbox.addEventListener("click", function () {
 });
 
 // Cookie message
-const header = document.querySelector(".header");
-const message = document.createElement("div");
-message.innerHTML =
-  "Używamy plików cookies w celu poprawy funkcjonalności i analityki. <button class='btn btn--close-cookie'>OK</button>";
+// const header = document.querySelector(".header");
+// const message = document.createElement("div");
+// message.innerHTML =
+//   "Używamy plików cookies w celu poprawy funkcjonalności i analityki. <button class='btn btn--close-cookie'>OK</button>";
 
-message.classList.add("cookie-message");
+// message.classList.add("cookie-message");
 
-header.prepend(message);
-// message.classList.add("visible");
-const btnCloseCookie = document.querySelector(".btn--close-cookie");
-console.log(btnCloseCookie);
-btnCloseCookie.addEventListener("click", function () {
-  message.remove();
-});
+// header.prepend(message);
+// // message.classList.add("visible");
+// const btnCloseCookie = document.querySelector(".btn--close-cookie");
+// console.log(btnCloseCookie);
+// btnCloseCookie.addEventListener("click", function () {
+//   message.remove();
+// });
