@@ -17,3 +17,12 @@
   // height: 50rem;
   align-self: flex-end;
 }
+
+.grid--3-cols {
+  display: grid;
+  grid-template-columns: 3fr 15rem 3fr;
+  grid-template-rows: repeat(11, 1fr);
+  row-gap: 1rem;
+  justify-items: center;
+  align-items: center;
+}
