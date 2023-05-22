@@ -82,7 +82,7 @@
   justify-content: center;
   background-position: 0 50%;
   margin-top: -15rem;
-  padding: 15rem 0 10rem;
+  padding: 15rem 0 25rem;
   transform-origin: left top;
   transform: skewY(-3deg);
 
@@ -108,14 +108,14 @@
   &__item-paragraph {
     line-height: 1;
     text-align: center;
-    font-size: 3.4rem;
+    font-size: 3rem;
     font-weight: 600;
     margin-top: 1rem;
   }
   &__item-paragraph-2 {
     line-height: 1;
     text-align: center;
-    font-size: 4.4rem;
+    font-size: 3.6rem;
     font-weight: 600;
     margin-top: 1rem;
   }
@@ -138,7 +138,7 @@
   &__item-number {
     font-size: 5.2rem;
     font-weight: 600;
-    color: #ddd;
+    color: #777;
     &::before,
     &::after {
       content: "";
@@ -148,20 +148,22 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      margin-top: 1rem;
+      margin-top: 0.6rem;
     }
     &::before {
       width: 6rem;
       height: 6rem;
 
-      background-color: lighten($color-primary-dark, 30%);
+      // background-color: lighten($color-primary-dark, 30%);
+      background-color: rgba($color-white, 0.3);
       z-index: -1;
     }
     &::after {
       width: 8rem;
       height: 8rem;
       // border: 1px solid $color-primary-dark;
-      background-color: lighten($color-primary-dark, 30%);
+      // background-color: lighten($color-primary-dark, 30%);
+      background-color: rgba($color-white, 0.7);
       z-index: -2;
     }
   }
@@ -265,5 +267,37 @@
     grid-column: 1/2;
     justify-self: end;
     width: 50%;
+  }
+}
+
+.section-offer {
+  @include sectionBgImage("../css/img/section-sailing-small.jpg", 0.8);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position: 0 50%;
+  margin-top: -15rem;
+  padding: 15rem 0 40rem;
+  transform-origin: left top;
+  transform: skewY(-3deg);
+  z-index: 7;
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    @include sectionBgImage("../css/img/section-sailing-large.jpg", 0.7);
+  }
+  @include responsive(md) {
+    padding-bottom: 15rem;
+  }
+  @include responsive(sm) {
+    text-align: center;
+    padding: 24rem 0 10rem 0;
+  }
+  @include responsive(xs) {
+    text-align: center;
+    padding: 22rem 0 5rem 0;
+  }
+  & > * {
+    transform: skewY(3deg);
   }
 }
