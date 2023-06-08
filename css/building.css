@@ -91,7 +91,8 @@ body {
   font-size: 7.4rem;
   position: absolute;
   top: 2rem;
-  left: 5rem; }
+  left: 5rem;
+  z-index: 2001; }
   .header__logo-text > a {
     display: inline-block;
     text-decoration: none;
@@ -203,11 +204,28 @@ body {
     .row {
       gap: 5rem; } }
 
+.offer__row {
+  max-width: 120rem;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem; }
+  @media (max-width: 66.25em) {
+    .offer__row {
+      gap: 35rem;
+      flex-direction: column; } }
+
 .col-1-of-2 {
   width: 100%;
   align-self: flex-end; }
 
 .col {
+  width: 50rem;
+  height: 60rem; }
+
+.offer__col {
   width: 50rem;
   height: 60rem; }
 

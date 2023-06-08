@@ -30,6 +30,7 @@ body {
     position: absolute;
     top: 2rem;
     left: 5rem;
+    z-index: 2001;
 
     & > a {
       display: inline-block;

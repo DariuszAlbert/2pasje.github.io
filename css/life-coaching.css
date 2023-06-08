@@ -91,7 +91,8 @@ body {
   font-size: 7.4rem;
   position: absolute;
   top: 2rem;
-  left: 5rem; }
+  left: 5rem;
+  z-index: 2001; }
   .header__logo-text > a {
     display: inline-block;
     text-decoration: none;
@@ -203,11 +204,28 @@ body {
     .row {
       gap: 5rem; } }
 
+.offer__row {
+  max-width: 120rem;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem; }
+  @media (max-width: 66.25em) {
+    .offer__row {
+      gap: 35rem;
+      flex-direction: column; } }
+
 .col-1-of-2 {
   width: 100%;
   align-self: flex-end; }
 
 .col {
+  width: 50rem;
+  height: 60rem; }
+
+.offer__col {
   width: 50rem;
   height: 60rem; }
 
@@ -751,6 +769,18 @@ body {
   transform: skewX(-12deg); }
   .story > * {
     transform: skewX(12deg); }
+    @media (max-width: 38.75em) {
+      .story > * {
+        transform: skewX(0deg); } }
+  @media (max-width: 38.75em) {
+    .story {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 3rem;
+      padding-left: 3rem;
+      transform: skewX(0deg); } }
   .story__shape {
     width: 15rem;
     height: 15rem;
@@ -761,6 +791,9 @@ body {
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-2.5rem) skewX(12deg);
     position: relative; }
+    @media (max-width: 38.75em) {
+      .story__shape {
+        transform: translateX(-2.5rem) skewX(0); } }
   .story__img {
     height: 100%;
     transition: all 0.8s; }
@@ -785,8 +818,7 @@ body {
 
 .card {
   perspective: 70rem;
-  position: relative;
-  height: 92rem; }
+  position: relative; }
   .card__side {
     font-size: 5rem;
     height: 92rem;
@@ -931,9 +963,12 @@ body {
   align-items: center; }
 
 .header__paragraph {
-  width: 50%;
+  width: 60%;
   transition: all 1.5s;
   animation: showText 4s ease; }
+  @media (max-width: 38.75em) {
+    .header__paragraph {
+      width: 70%; } }
 
 .section-for-you {
   background-image: linear-gradient(to right top, rgba(248, 248, 248, 0.8), rgba(238, 238, 238, 0.8)), url("../css/img/section-sailing-small.jpg");
@@ -1165,14 +1200,12 @@ body {
       background-size: cover; } }
   @media (max-width: 66.25em) {
     .section-offer {
-      padding-bottom: 15rem; } }
+      padding-bottom: 40rem; } }
   @media (max-width: 51.25em) {
     .section-offer {
-      text-align: center;
-      padding: 24rem 0 10rem 0; } }
+      text-align: center; } }
   @media (max-width: 30em) {
     .section-offer {
-      text-align: center;
-      padding: 22rem 0 5rem 0; } }
+      text-align: center; } }
   .section-offer > * {
     transform: skewY(3deg); }

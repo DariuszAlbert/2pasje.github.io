@@ -4,9 +4,12 @@
   align-items: center;
 }
 .header__paragraph {
-  width: 50%;
+  width: 60%;
   transition: all 1.5s;
   animation: showText 4s ease;
+  @include responsive(ss) {
+    width: 70%;
+  }
 }
 .section-for-you {
   @include sectionBgImage("../css/img/section-sailing-small.jpg", 0.8);
@@ -287,15 +290,15 @@
     @include sectionBgImage("../css/img/section-sailing-large.jpg", 0.7);
   }
   @include responsive(md) {
-    padding-bottom: 15rem;
+    padding-bottom: 40rem;
   }
   @include responsive(sm) {
     text-align: center;
-    padding: 24rem 0 10rem 0;
+    // padding: 24rem 0 15rem 0;
   }
   @include responsive(xs) {
     text-align: center;
-    padding: 22rem 0 5rem 0;
+    // padding: 22rem 0 5rem 0;
   }
   & > * {
     transform: skewY(3deg);
