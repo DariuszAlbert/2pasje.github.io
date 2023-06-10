@@ -49,4 +49,8 @@
   row-gap: 1rem;
   justify-items: center;
   align-items: center;
+  @include responsive(sm) {
+    grid-template-columns: 0 2fr 0;
+    row-gap: 2rem;
+  }
 }
