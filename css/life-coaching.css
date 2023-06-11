@@ -81,6 +81,96 @@ body {
 .hidden {
   visibility: hidden; }
 
+/* cormorant-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/cormorant-v21-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ }
+
+/* cormorant-500 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/cormorant-v21-latin-500.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ }
+
+/* cormorant-600 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/cormorant-v21-latin-600.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ }
+
+/* cormorant-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/cormorant-v21-latin-700.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ }
+
+/* cormorant-regular - latin-ext */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/cormorant-v21-latin-ext-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ }
+
+/* cormorant-500 - latin-ext */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/cormorant-v21-latin-ext-500.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ }
+
+/* cormorant-600 - latin-ext */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/cormorant-v21-latin-ext-600.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ }
+
+/* cormorant-700 - latin-ext */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/cormorant-v21-latin-ext-700.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ }
+
+/* petit-formal-script-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Petit Formal Script";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/petit-formal-script-v14-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ }
+
 body {
   font-family: "Cormorant", serif;
   font-weight: 400;
@@ -860,9 +950,9 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, rgba(170, 170, 170, 0.5), rgba(34, 34, 34, 0.5)), url("../../css/img/for-you-photo-large.jpg"); }
+      background-image: linear-gradient(to right bottom, rgba(170, 170, 170, 0.5), rgba(34, 34, 34, 0.5)), url("../../css/img/for-you-photo-small.jpg"); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #aaa, #222), url("../../css/img/for-you-photo-large.jpg"); }
+      background-image: linear-gradient(to right bottom, #aaa, #222), url("../../css/img/for-you-photo-small.jpg"); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
