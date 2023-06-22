@@ -68,7 +68,7 @@
           rgba($color-secondary-light, 0.5),
           rgba($color-secondary-dark, 0.5)
         ),
-        url("../../css/img/for-you-photo-small.jpg");
+        url("../../css/img/for-you-photo-small.webp");
     }
     &--2 {
       background-image: linear-gradient(
@@ -76,7 +76,7 @@
           $color-secondary-light,
           $color-secondary-dark
         ),
-        url("../../css/img/for-you-photo-small.jpg");
+        url("../../css/img/for-you-photo-small.webp");
     }
   }
   &__heading {
